@@ -1,0 +1,233 @@
+*{margin:0;padding:0;}
+.ipad{
+    background:#352f27 ;
+    height: 765px;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:5px;
+}
+.left{
+    display: flex;
+    width: 300px;
+    flex-direction: column;    
+}
+.left-head-logo{
+    height:45px;   
+   background: url(../images/bg_header01.png) 
+}
+.left-head-user{
+    height: 68px;
+    color:#bb8f63; 
+    font-size: 15px;
+    padding: 5px;
+    box-sizing:border-box;
+    background: url(../images/sideBg.png);  
+}
+
+.left-head-income{
+    height: 45px;
+    color: #fff;
+    line-height:45px;
+    background: url(../images/bg3.png);    
+    position: relative;
+}
+.left-head-income img{
+    position: absolute;
+    top: 14px;
+    left: 21px;
+}
+/* 左边内容 */
+.left-content{
+    width: 300px;
+    height:503px;
+    position: relative;
+    flex-direction: column;
+    background: url(../images/bg02.png);
+}
+.left-content-table{
+    height:205px;
+    line-height: 39px;
+    position: relative;
+
+    background: url(../images/03.jpg);
+}
+.left-content-table table{
+    color: #803717;
+    margin-left: 25px;
+}
+.left-content-table img{
+    position: absolute;
+    top: 137px;
+    left: 2px;
+}
+left-content-table tr>td:not(:first-child){
+    text-align: right;
+}
+.left-content-search{
+    margin-top: 153px;
+    height: 149px;
+    width: 300px;
+    background: #f3e7bf;
+    position: relative;
+}
+.left-content-songe{
+    background:#f2f1d3;
+    width: 213px;
+    height: 49px;
+    line-height: 49px;
+    font-size: 24px;
+    color: #b82c1d;
+    position: absolute;
+    top: 27px;
+    margin-left: 24px;
+    text-align: center;
+}
+.left-content-search input{
+    background: #fff;
+    position: absolute;
+    padding-left: 10px;
+    top: 97px;
+    left: 5px;
+    height: 29px;
+    width: 190px;
+    outline: none;
+    border-radius: 18px;
+}
+.left-content-search img{
+    position: absolute;top: 92px;
+    right: 49px;
+}
+
+.left-content-nav{
+    width: 41px;
+    height: 596px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+ .right{
+    position: absolute;
+    top: 5px;
+    right: 162px;
+    height: 45px;
+    width: 722px;
+    background: url(../images/bg_header01.png);
+}
+ .right-menu{
+    width: 610px;
+    height: 47px;
+    margin-top: 60px;
+   margin-left: 77px;
+}
+
+ .right-menu div:not(:last-child){
+width: 93px;
+height: 40px;
+line-height: 40px;
+background-color: #ecbd85;
+text-align: center;
+display:inline-block;
+color: #88491d;
+border-radius: 3px;
+}
+.right-menu div:nth-child(6){
+    width:60px;
+    height:40px;
+    line-height: 40px;
+    background: #ecbd85;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+}
+ .right-menu div:hover{
+    background-color: #aa3828;
+    color: #fff;
+ }
+/* 笔记本 */
+.right-info{
+    background: url(../images/bg04.png);
+    height:563px;
+    width:666px;
+    margin-left: 27px;
+    margin-top: -8px;
+    overflow: hidden;
+    position: relative;
+    padding-left:74px;
+    box-sizing: border-box;
+}
+.right-info hr{
+    position: absolute;
+    top: 24px;
+    left: 77px;
+    width: 539px;
+    height: 1px;
+    background-color: #c63f2b;
+}
+.right-info div{
+    width:121px;
+    height: 70px;
+    background-color: #fff;
+    float: left;
+    margin-top: 47px;
+    margin-right: 20px;
+     font-size: 15px;
+    box-sizing: border-box;
+    padding: 10px;  
+    box-shadow: 2px 3px 4px #f8eee6;
+}
+ .right-info img{
+    position: absolute;
+    top: 47px;
+    left: 76px;
+}
+.right-info div:hover{
+    border: 2px solid  #cc3333;
+}
+.right-info div p{
+    color: #aa3828
+}
+
+ .footer{
+    color: #fff;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   
+}
+
+ .footer p{
+    color: #aaa383;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+ .footer-icon {
+    position: absolute;
+    top: 16px;
+    left: 367px;
+}
+.footer-icon ul{
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+ .footer-Settlement{
+    height: 56px;
+    width: 131px;
+    background: #c23e29;
+    text-align: center;
+    font-size: 25px;
+    line-height: 56px;
+    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+ .footer-Settlement img{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+
+
+
