@@ -1,0 +1,18 @@
+
+/* .more{
+    color: rgb(194, 12, 12);
+} */
+swiper{
+    padding: 2rpx;
+    height: 300rpx;
+    margin-bottom: 10rpx;
+}
+.lunbo image{
+    height: 300rpx;
+}
+/* .img-container image{
+    height: 300rpx;
+} */
+.item .more{
+    margin-left: 20rpx;
+}

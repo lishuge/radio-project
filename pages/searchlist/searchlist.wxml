@@ -1,0 +1,15 @@
+<!--pages/searchlist/searchlist.wxml-->
+<!-- <text>pages/searchlist/searchlist.wxml</text> -->
+<view class="content">
+    <view class="item" wx:for="{{musics}}" wx:key="{{item.id}}">
+      <view class="left">
+          <view>
+            <text class="name">{{item.name}}</text>
+            <view class="artist"><text>{{item.artistName}}</text></view>
+          </view>
+      </view>
+      <view class="right">          
+          <image class="play" src="/images/三个点.png"></image>
+      </view>
+    </view>
+</view>

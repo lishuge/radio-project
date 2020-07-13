@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<wxs src="../../utils/utils.wxs" module="tools"></wxs>
+    <form bind:submit="handleSubmit">
+        <view class="from">
+            <view class="search">
+                <input type="text" name="keyword" placeholder="搜索内容" />
+                <button form-type="submit"></button>
+            </view>   
+        </view>
+    </form>
+<view class="left">历史搜索</view>
+<view class="hor">
+    <text wx:for="{{history}}">{{item}}</text>
+    <!-- <text>world</text> -->
+</view>
+<view class="left">热门搜索</view>
+<view class="hot" wx:for="{{hotLists}}" wx:key="{{item.id}}" index="index">
+    <view class="hotlist">
+        <span class="{{tools.index(index+1)==1?'numl':'num'}}">{{index+1}}</span>
+        <span class="{{tools.index(index+1)==1?'hotname':''}}">{{item.name}}</span>
+    </view>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/my/my.wxml-->
+<wxs src="../../utils/utils.wxs" module="tools"></wxs>
+<view class="contain">
+    <view class="bg">
+        <image src="../../images/bg.png"></image>
+    </view>
+    <button class="button" wx:if="{{hasUserInfo}}" open-type="getUserInfo" 
+    lang="zh_CN" bindgetuserinfo="onGetUserInfo">登录</button>      
+    <view wx:else class="index">
+        <image src="{{logo}}"></image>
+        <view>{{name}}</view>
+    </view>
+</view>
+<view class="conte">
+    <h2>我的浏览</h2>
+    <scroll-view scroll-x="true" class="scroll">
+        <view class="localhost" wx:for="{{musicHistory}}" wx:key="{{item.id}}">
+            <view class="img">
+                <image src="{{item.img}}" class="item"></image>
+            </view>
+            <view class="title-name">
+                <view>{{tools.format(item.name)}}</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

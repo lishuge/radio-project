@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/searchlist/searchlist",
+    "pages/my/my",
+    "pages/list/list",
+    "pages/play/play"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#C20C0C",
+    "navigationBarTitleText": "电台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#C20C0C",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath":"/images/music.png",
+      "selectedIconPath":"/images/selected-music.png"
+    }, {
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath":"/images/search1.png",
+      "selectedIconPath":"/images/slected-search1.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath":"/images/my.png",
+      "selectedIconPath":"/images/slected-my.png"
+    }]
+  },
+  "requiredBackgroundModes": ["audio", "location"],
+  "sitemapLocation": "sitemap.json"
+}

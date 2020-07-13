@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<!-- <text>pages/list/list.wxml</text> -->
+<view class="maxbox">
+    <view class="container" wx:for="{{itemList}}" wx:key="{{item.id}}"  >
+        <image bind:tap="handlePlay"
+         data-index="{{index}}"
+         data-id="{{item.id}}" 
+         data-img="{{item.picUrl}}"
+         data-name="{{item.name}}"
+         src="{{item.picUrl}}"         
+         ></image>
+        <text>{{item.name}}</text>
+    </view>
+</view>

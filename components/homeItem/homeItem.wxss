@@ -1,0 +1,42 @@
+/* components/homeItem/homeItem.wxss */
+/* .content{
+   
+} */
+.content{    
+    border-bottom: 1rpx solid #eee;
+    padding-top: 16rpx;
+}
+.list{
+    padding: 16rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    color: #fff;
+   box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.item .icon image{
+    width:35rpx;
+    height:35rpx;
+}
+.icon span{
+    font-size: 25rpx; 
+}
+.item{ 
+    position: relative;
+    width: 220rpx;
+}
+.item image{
+    width: 220rpx;
+    height: 220rpx;
+    border: 1rpx solid rgba(102, 51, 153,0.1);
+    border-radius: 20rpx;
+}
+.content span{
+    font-size: 25rpx;
+}

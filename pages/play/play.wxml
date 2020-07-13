@@ -1,0 +1,17 @@
+<!--pages/play/play.wxml-->
+<view class="container">
+    <view class="moveCircle">
+        <image class="bg {{isPlay?'running':'paused'}}" src="{{datalist.al.picUrl}}" mode="aspectFit|aspectFill|widthFix"
+            lazy-load="{{ture}}">
+        </image>
+    </view>
+    <image src="/images/icons/play-item.png" class="play-item {{isPlay?'play':'unplay'}}"></image>
+    <text class="name">{{datalist.name}}</text>
+    <image class="music" bind:tap="handleClick" src="{{isPlay?'/images/icons/play.png':'/images/icons/pause.png'}}"
+        mode="aspectFit|aspectFill|widthFix">
+    </image>
+    <image bind:tap="lastMusic" class="last" src="../../images/icons/last.png"></image>
+    <image bind:tap="nextMusic" class="next" src="../../images/icons/next(1).png"></image>
+    <image src="{{datalist.al.picUrl}}" class="background_img"></image>
+    <view class="bg-blur"></view>
+</view>

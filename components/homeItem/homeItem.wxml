@@ -1,0 +1,16 @@
+<!--components/homeItem/homeItem.wxml-->
+<view class="content">
+    <view class="top">
+        <slot name="title" bind-tap="handleToggle()"></slot>        
+    </view>
+    <view class="list">
+        <view class="item" wx:for="{{data}}" wx:key="{{item.id}}">
+            <view class="icon">
+                <image src="/images/p0.png"></image>
+                <span>{{item.programCount}}</span>
+            </view>
+            <image src="{{item.picUrl}}"></image>
+            <span>{{item.name}}</span>
+        </view>
+    </view>
+</view>

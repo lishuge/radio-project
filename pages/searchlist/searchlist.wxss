@@ -1,0 +1,39 @@
+/* pages/searchlist/searchlist.wxss */
+/* .right{ */
+    /* border: 1rpx solid red; */
+/* } */
+.play{
+    /* border: 1rpx solid orchid; */
+    width:50rpx;
+    height:50rpx;
+  }
+   .item{
+    padding:10rpx 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+  }
+  .left>view{
+    flex:1;
+  }
+  .item .left{
+    flex:1;
+    display: flex;
+    align-items: center;
+  }
+  /* .name{
+    color:rgb(69, 162, 233);
+    font-size:35 rpx;
+  } */
+  .item .right{
+    display: flex;
+    align-items: center;
+  }
+  .item .play{
+    margin-left: 20px;
+  }
+  .artist{
+    color:rgb(82, 80, 80);
+    font-size: 30rpx;
+  }

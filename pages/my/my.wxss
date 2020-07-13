@@ -1,0 +1,55 @@
+/* pages/my/my.wxss */
+.contain{
+    position: relative;
+}
+.contain .button{
+    position: absolute;
+    top: 100rpx;
+    left: 30rpx;
+    background-color: rgba(255, 255, 255,0);
+}
+.bg image{
+    height: 400rpx;
+    z-index: 1;
+}
+.index{
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    top: 100rpx;
+}
+.index image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.conte h2{
+    margin: 20rpx;
+}
+scroll-view {
+    margin-top: 20rpx;
+    height: 600rpx;
+} 
+.scroll{
+    white-space: nowrap;
+}
+.scroll .localhost image{
+    width: 220rpx;
+    height: 220rpx;
+}
+.scroll view{
+   display: inline-block; 
+}
+.localhost{
+    /* border:1rpx solid red; */
+    position: relative;
+    width: 300rpx;
+}
+.title-name{    
+    position: absolute;   
+    width: 300rpx;
+    font-size: 35rpx;
+    top: 175rpx;
+    left: 0rpx;
+    background: rgba(255,255,255,0.4);
+}

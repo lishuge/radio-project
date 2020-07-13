@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<view class="list">
+    <!-- <view class="img-container"> -->
+        <swiper class="lunbo" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}"
+            indicator-active-color="{{active}}">
+            <swiper-item wx:for="{{images}}" wx:key="{{item.img}}">
+                <image src="{{item.img}}">
+                </image>
+            </swiper-item>
+        </swiper>
+    <!-- </view> -->
+    <view class="item">
+        <v-item data="{{musicList}}">
+            <text slot="title" class="more" bindtap="handleToggle">流行音乐</text>
+        </v-item>
+        <v-item data="{{radioList}}">
+            <text slot="title" class="more" bindtap="handleToggle2">广播剧场</text>
+        </v-item>
+        <v-item data="{{talkList}}">
+            <text slot="title" class="more" bindtap="handleToggle3">相声曲艺</text>
+        </v-item>
+    </view>
+</view>

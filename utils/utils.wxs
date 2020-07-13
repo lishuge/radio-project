@@ -1,0 +1,23 @@
+function format(value){
+    if(value){
+      if(value.length>6){
+        value=value.slice(0,8)+"..."
+      }
+      return value
+    }
+  }
+  function kuang(index){
+      if(index<4){
+          return 1
+      }else{
+          return 0
+      }
+  }
+  function pad(index){
+    return (index<10)?("0"+index):index
+  }
+  module.exports={
+    format:format,
+    index:kuang,
+    pad:pad
+  }
